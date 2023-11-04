@@ -1,9 +1,21 @@
+
 body {
     background-color: blueviolet;
 }
 
+.app-container {
+    max-width: 80%;
+    background-color: aqua;
+    padding: 20px 30px;
+    margin: 20px auto;
+}
+
 header {
     text-align: center;
+}
+
+main {
+    padding: 30px;
 }
 
 .weather-data-today {
