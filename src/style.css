@@ -1,0 +1,16 @@
+body {
+    background-color: blueviolet;
+}
+
+header {
+    text-align: center;
+}
+
+.weather-data-today {
+    display: flex;
+    justify-content:space-evenly;
+}
+
+footer {
+    text-align: center;
+}

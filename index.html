@@ -3,37 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <title>Weather App</title>
   </head>
   <body>
-    <header>
-      <h1>Seremban</h1>
-    </header>
-    <main>
-      <div>
-      <input type="search" placeholder="Change city..." required>
-      <input type="submit" value="Go">
-      Saturday <br>
-      11 November 2023 <br>
-      4:24:24 pm
-      </div>
-      <div>
-        ☀ Sunny 27° C<br>
-        Wind : 9.77 km/h <br>
-        Humidity : 94%
-      </div>
-    </main>
-    <footer>
-      Coded by
-      <a href="https://github.com/chubbyle/" target="_blank"
-        >Siti Safiah Mohammad</a
-      ><br />
-      Codes hosted on
-      <a href="https://github.com/chubbyle/weatherApp" target="_blank"
-        >GitHub</a
-      >
-      and
-      <a href="https://scp-weather-app.netlify.app" target="_blank">Netlify</a>
-    </footer>
+    <div>
+      <header>
+        <h1>Seremban</h1>
+        <form action="#">
+          <input type="search" placeholder="Change city..." required />
+          <input type="submit" value="Go" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-data-today">
+          <div>
+            Saturday <br />
+            11 November 2023 <br />
+            4:24:24 pm
+          </div>
+          <div>
+            ☀ Sunny 27° C<br />
+            Wind : 9.77 km/h <br />
+            Humidity : 94%
+          </div>
+        </div>
+      </main>
+      <footer>
+        Coded by
+        <a href="https://github.com/chubbyle/" target="_blank"
+          >Siti Safiah Mohammad</a
+        ><br />
+        Codes hosted on
+        <a href="https://github.com/chubbyle/weatherApp" target="_blank"
+          >GitHub</a
+        >
+        and
+        <a href="https://scp-weather-app.netlify.app" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
