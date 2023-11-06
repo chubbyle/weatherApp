@@ -1,11 +1,11 @@
-
 body {
-    background-color: blueviolet;
+    background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
 }
 
 .app-container {
-    max-width: 80%;
-    background-color: aqua;
+    max-width: 92%;
+    background: linear-gradient(109.6deg, rgb(185, 212, 242) 11.2%, rgb(244, 210, 226) 100.3%);
+    border-radius: 10px;
     padding: 20px 30px;
     margin: 20px auto;
 }
@@ -20,7 +20,7 @@ main {
 
 .weather-data-today {
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
 }
 
 footer {
