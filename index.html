@@ -19,21 +19,25 @@
       <header>
         <h1></h1>
         <form id="search-form">
-          <input type="search" placeholder="Change city..." required id="search-form-input"/>
+          <input
+            type="search"
+            placeholder="Change city..."
+            required
+            id="search-form-input"
+          />
           <input type="submit" value="Go" />
         </form>
       </header>
       <main>
         <div class="weather-data-today">
           <div>
-            Saturday <br />
-            11 November 2023 <br />
-            4:24:24 pm
+            <span id="time"></span><br />
+            Wind : <span id="wind-speed"></span> <br />
+            Humidity : <span id="humidity"></span>
           </div>
           <div>
-            ☀ <span id="description"> Sunny </span> <span id="temperature"></span>° C<br />
-            Wind : <span id="wind-speed">9.77 km/h</span> <br />
-            Humidity : <span id="humidity">94%</span>
+            ☀ <span id="description"></span> <span id="temperature"></span>°
+            C<br />
           </div>
         </div>
       </main>
