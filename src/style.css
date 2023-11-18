@@ -53,6 +53,7 @@ main {
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
+  
 }
 
 .weather-data-today strong {
@@ -88,10 +89,14 @@ main {
 }
 
 .weather-forecast {
-    background: pink;
+    background: #385170;
+    border: 5px solid #ececec;
+    border-radius: 10px;
+    color: #ececec;
     display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
+    justify-content:space-evenly;
+    margin-top: 0;
+    padding: 10px auto;
 }
 
 .forecast-day {
@@ -110,7 +115,7 @@ main {
 .forecast-temperature {
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
 }
 .forecast-temperature-min {
     opacity: 0.4;

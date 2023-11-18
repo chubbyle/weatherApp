@@ -21,6 +21,8 @@ function refreshWeatherData (response) {
 
     timeElement.innerHTML = formatDate(date);
     iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" /> `;
+
+    getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -58,7 +60,15 @@ function handleSearchNewCity (event){
     searchCity (searchInput.value);
 }
 
+function getForecast(city) {
+  let apiKey = "d43e706ted81e54bf1d00fo1a187a1b5";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(displayForecast);
+
+}
+
 function displayForecast() {
+  
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHTML = "";
 
@@ -84,4 +94,3 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchNewCity);
 
 searchCity("Tokyo");
-displayForecast();
