@@ -109,6 +109,8 @@ main {
 
 .forecast-temperature {
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 .forecast-temperature-min {
     opacity: 0.4;
