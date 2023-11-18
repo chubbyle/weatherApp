@@ -1,5 +1,7 @@
 body {
   background: #142d4c;
+  font-family: "Engagement", cursive;
+  font-family: "Roboto", sans-serif;
 }
 
 .app-container {
@@ -53,7 +55,6 @@ main {
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-
 }
 
 .weather-data-today strong {
@@ -88,36 +89,41 @@ main {
   top: 20px;
 }
 
+.weather-unit {
+    font-weight: 700;
+}
+
 .weather-forecast {
-    background: #385170;
-    border: 5px solid #ececec;
-    border-radius: 10px;
-    color: #ececec;
-    display: flex;
-    justify-content:space-evenly;
-    margin-top: 0;
-    padding: 10px auto;
+  background: #385170;
+  border: 5px solid #ececec;
+  border-radius: 10px;
+  color: #ececec;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 0;
+  padding: 10px auto;
 }
 
 .forecast-day {
-    text-align: center;
-    font-size: 16px;
-    line-height: 20px;
-    margin-bottom: 10px;
-    opacity: 0.4;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 12px;
+  opacity: 0.4;
 }
 
 .forecast-icon {
-    width: 100%;
+  width: 100%;
 }
 
 .forecast-temperature {
-    text-align: center;
-    display: flex;
-    justify-content:space-evenly;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 12px;
 }
 .forecast-temperature-min {
-    opacity: 0.4;
+  opacity: 0.4;
 }
 
 footer {
