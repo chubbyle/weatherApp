@@ -71,14 +71,12 @@ function getForecast(city) {
 }
 
 function displayForecast(response) {
-  console.log(response.data);
-
-  let forecastHTML = "";
+  let forecastHtml = "";
 
   response.data.daily.forEach(function (day, index) {
     if (index < 5) {
-      forecastHTML =
-        forecastHTML +
+      forecastHtml =
+        forecastHtml +
         `
         <div class="forecast-container">
           <div class="forecast-day">${formatDay(day.time)}</div>
@@ -99,7 +97,7 @@ function displayForecast(response) {
   });
 
   let forecastElement = document.querySelector("#forecast");
-  forecastElement.innerHTML = forecastHTML;
+  forecastElement.innerHTML = forecastHtml;
 }
 
 let searchFormElement = document.querySelector("#search-form");
