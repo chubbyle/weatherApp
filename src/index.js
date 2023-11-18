@@ -12,7 +12,7 @@ function refreshWeatherData (response) {
     let iconElement = document.querySelector("#icon");
 
 
-    cityElement.innerHTML = response.data.city;
+    cityElement.innerHTML = `${response.data.city}, ${response.data.country}`;
     temperatureElement.innerHTML = Math.round(temperature);
     descriptionElement.innerHTML = response.data.condition.description;
     windSpeedElement.innerHTML = `${response.data.wind.speed
@@ -61,4 +61,4 @@ function handleSearchNewCity (event){
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchNewCity);
 
-searchCity("Kuala Lumpur");
+searchCity("Tokyo");
