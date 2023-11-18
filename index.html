@@ -23,21 +23,29 @@
             type="search"
             placeholder="Change city..."
             required
+            class="search-form-input"
             id="search-form-input"
           />
-          <input type="submit" value="Go" />
+          <input type="submit" value="Go" class="search-form-button" />
         </form>
       </header>
       <main>
         <div class="weather-data-today">
           <div>
             <span id="time"></span><br />
-            Wind : <span id="wind-speed"></span> <br />
-            Humidity : <span id="humidity"></span>
+            Wind : <strong><span id="wind-speed"></span></strong> <br />
+            Humidity : <strong><span id="humidity"></span></strong>
           </div>
-          <div>
-            <span id="icon"></span><span id="description"></span>
-            <span id="temperature"></span>° C<br />
+          <div class="weather-temperature-container">
+            <div class="icon-description">
+              <div class="weather-icon" id="icon"></div>
+              <div class="weather-description" id="description"></div>
+            </div>
+            <div>
+              <div>
+                <span class="weather-temperature" id="temperature"></span>° C
+              </div>
+            </div>
           </div>
         </div>
       </main>
@@ -45,7 +53,7 @@
         Coded by
         <a href="https://github.com/chubbyle/" target="_blank"
           >Siti Safiah Mohammad</a
-        ><br />
+        >
         Codes hosted on
         <a href="https://github.com/chubbyle/weatherApp" target="_blank"
           >GitHub</a
